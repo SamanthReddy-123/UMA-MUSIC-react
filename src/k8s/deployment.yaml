@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: uma-musical-app
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: uma-musical-app
+  template:
+    metadata:
+      labels:
+        app: uma-musical-app
+    spec:
+      containers:
+        - name: uma-musical-app
+          image: yourdockerhub/musical-app:latest
+          ports:
+            - containerPort: 3000
