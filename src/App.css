@@ -1,0 +1,28 @@
+.app {
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.logo {
+  width: 100px;
+  margin-top: 20px;
+}
+
+.player {
+  margin: 20px;
+}
+
+.playlist {
+  margin-top: 30px;
+}
+
+.playlist p {
+  cursor: pointer;
+  margin: 5px 0;
+  color: #444;
+}
+
+.playlist p:hover {
+  color: #000;
+  font-weight: bold;
+}
